@@ -11,9 +11,8 @@ export default defineConfig({
         changeOrigin: true,
       }
     }
-  }
+  },  
   build: {
-    // Esto ajusta el límite de advertencia a 500 KB
     chunkSizeWarningLimit: 1024,
   },
 })
