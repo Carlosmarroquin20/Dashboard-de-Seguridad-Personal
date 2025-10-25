@@ -23,7 +23,7 @@ jobs:
       
       - name: Run Security Audit
         working-directory: ./backend
-        run: npm audit --audit-level=moderate
+        run: npm audit --audit-level=high
   
   test-frontend:
     runs-on: ubuntu-latest
@@ -45,7 +45,7 @@ jobs:
       
       - name: Run Security Audit
         working-directory: ./frontend
-        run: npm audit --audit-level=moderate
+        run: npm audit --audit-level=high
 
   deploy:
     needs: [test-backend, test-frontend]
